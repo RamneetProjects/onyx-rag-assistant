@@ -1,0 +1,58 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ansible
+*.retry
+vault-password-file
+
+# Kubernetes secrets
+*-secret.yaml
+*-secret.yml
+secrets.yaml
+secrets.yml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Logs
+*.log
+logs/
+
+# Local data and backups
+data/
+uploads/
+backups/
+database/
+postgres-data/
+models/
+*.gguf
+*.safetensors
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
